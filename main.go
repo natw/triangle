@@ -29,7 +29,7 @@ func main() {
 
 	go func() {
 		time.Sleep(time.Second)
-		for range time.Tick(time.Millisecond * 300) {
+		for range time.Tick(time.Millisecond * 100) {
 			field.Tick()
 			field.Renderer.Refresh()
 		}
